@@ -1,0 +1,32 @@
+<div class="row mt-3">
+  <div class="col-4">
+      <app-menu-dashboard></app-menu-dashboard>
+  </div>
+
+  <div class="col-8">
+
+      <h1>Gestion des utilisateurs</h1>
+
+    <div>
+        <a href="/admin/user/ajouter" class="btn btn-primary my-3">Ajouter un utilisateur</a>
+    </div>
+    <table class="table table-striped my-3">
+        <tbody>
+            <tr *ngFor="let u of utilisateurs">
+                <td>
+                    id: {{u._id}}<br>
+                    nom: {{u.nom}}<br>
+                    prenom: {{u.prenom}}<br>
+                    @: {{u.email}}
+                </td>
+                <td>
+                    <a href="/admin/user/modifier" class="btn btn-warning my-4">Modifier</a>
+                </td>
+                <td>
+                    <a href="/admin/user/liste-user" class="btn btn-danger my-4">Supprimer</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+</div>

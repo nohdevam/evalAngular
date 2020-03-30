@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-md navbar-dark">
+  <span class="navbar-brand">
+    <a href="/"><img src="/../../assets/logo-site.png" alt="" class="mr-2">PEP'eat</a>
+  </span>
+
+
+
+  <!-- bouton responsive  -->
+  <button class="navbar-toggler" (click)="toogleMenu(menu)">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" #menu>
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a routerLink="/" class="nav-link">Accueil</a></li>
+      </ul>
+
+      <ul class="navbar-nav">
+          <li class="nav-item"><a routerLink="/admin" class="nav-link">Admin</a></li>
+      </ul>
+  </div>
+</nav>

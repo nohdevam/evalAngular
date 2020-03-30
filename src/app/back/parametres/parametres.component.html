@@ -1,0 +1,18 @@
+<div class="col-8">
+  <table class="table table-striped">
+    <tbody>
+        <tr *ngFor="let parametre of parametres">
+            <td>
+                information: {{parametre.information}}
+            </td>
+            <td>
+                <a href="/admin/parametres/liste-param" class="btn btn-warning" id="btn-td">Modifier</a>
+            </td>
+            <td>
+                <a href="/admin/parametres/liste-param" class="btn btn-danger" id="btn-td">Supprimer</a>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+    <a class="btn my-2 pb-2" href="/admin/parametres/liste-param" title="Page Précédente">&lt;</a>
+</div>

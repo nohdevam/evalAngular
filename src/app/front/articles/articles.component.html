@@ -1,0 +1,33 @@
+<div class="row justify-content-between mt-5" id="page">
+  <div class="col-8 text-center">
+  <a class="btn my-2 pb-2" href="/" title="Retour Accueil" id="but-top">&lt;</a>
+      <h1>{{article[0].titre}}</h1>
+      <img src="../../../assets/articles/{{article[0].image}}" alt="">
+        <div class="card" id="c-cont">
+          <p>{{article[0].contenu}}</p>
+        </div>
+
+  </div>
+
+  <div class="col-4">
+    <div class="card text-center mt-5" id="c-cat">
+      <div class="card-header "><h2>Mots-clés</h2></div>
+      <p class="categorie my-2">{{article[0].categories}}</p>
+    </div>
+    <div class="card mt-3 text-center" id="c-com">
+      <div class="card-header text-center">
+        <h3>Commentaires</h3>
+      </div>
+      <div *ngFor="let commentaire of commentaires">
+        <p>"{{commentaire.contenu}}"</p>
+        <p>{{commentaire.nom_auteur}}</p>
+      </div>
+    </div>
+  <a class="btn mt-5" href="/" title="Ajouter au panier"><img src="../../../assets/panier.png" alt="" class="img-pan"></a>
+  </div>
+
+
+</div>
+
+<!-- {{article | json}} -->
+

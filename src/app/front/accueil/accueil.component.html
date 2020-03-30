@@ -1,0 +1,14 @@
+<h2 class="my-3 text-center">Du bonheur dans votre assiette !</h2>
+
+
+<div class="row mt-3 justify-content-around">
+  <article class="col-4 my-3 text-center" *ngFor="let article of articles">
+      <div class="card">
+          <h3 class="card-header ">{{article.titre}}</h3>
+            <img src="../../../assets/articles/{{article.image}}" alt="">
+            <p class="art-cont overflow-hidden">{{article.contenu}}</p>
+            <a [routerLink]="['/articles', article._id]" class="btn mx-auto my-2" title="Lire plus" >+</a>
+
+      </div>
+  </article>
+</div>

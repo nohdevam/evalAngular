@@ -1,0 +1,13 @@
+.navbar{
+  background: rgb(236, 44, 76);
+  border-radius: 5px;
+  height: 65px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+span a{
+ font-size: x-large ;
+}
