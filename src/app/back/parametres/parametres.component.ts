@@ -9,13 +9,13 @@ import { ParametresService } from '../../service/parametres.service';
 export class ParametresComponent implements OnInit {
 parametres;
   constructor(
-    private service : ParametresService) { }
+    private service: ParametresService) { }
 
   ngOnInit(): void {
     this.service.getAllParametres()
-    .subscribe((response : Response) => {
+    .subscribe((response: Response) => {
       this.parametres = response;
-    })
+    });
   }
 
 }

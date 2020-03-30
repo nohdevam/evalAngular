@@ -5,16 +5,16 @@ import { HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class UserService {
-  url =  "https://guarded-plateau-89843.herokuapp.com/utilisateurs";
+  url =  'https://guarded-plateau-89843.herokuapp.com/utilisateurs';
 
-  constructor(private http : HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  getAllUsers(){
+  getAllUsers() {
     return this.http.get(this.url);
   }
 
   getUserById(id) {
-    return this.http.get(this.url + "/" + id);
+    return this.http.get(this.url + '/' + id);
   }
 
 

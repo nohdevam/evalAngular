@@ -9,12 +9,12 @@ import { UserService } from '../../../service/user.service';
 })
 export class ListeUserComponent implements OnInit {
   utilisateurs;
-  constructor(private service : UserService) { }
+  constructor(private service: UserService) { }
 
   ngOnInit(): void {
     this.service.getAllUsers()
   .subscribe((response = Response) => {
     this.utilisateurs = response;
-  }) }
+  }); }
 
 }

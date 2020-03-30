@@ -11,7 +11,7 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  toogleMenu(menu){
-    menu.classList.toggle("collapse")
+  toogleMenu(menu) {
+    menu.classList.toggle('collapse');
   }
 }

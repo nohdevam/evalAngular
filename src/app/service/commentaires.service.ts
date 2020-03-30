@@ -7,16 +7,16 @@ import { HttpClient} from '@angular/common/http';
 })
 export class CommentairesService {
 
-  url =  "https://guarded-plateau-89843.herokuapp.com/commentaires";
+  url =  'https://guarded-plateau-89843.herokuapp.com/commentaires';
 
-  constructor(private http : HttpClient ) { }
+  constructor(private http: HttpClient ) { }
 
-  getAllCommentaires(){
+  getAllCommentaires() {
     return this.http.get(this.url);
   }
 
-  getCommentaireById(id){
-    return this.http.get(this.url + "/" + id);
+  getCommentaireById(id) {
+    return this.http.get(this.url + '/' + id);
   }
 }
 

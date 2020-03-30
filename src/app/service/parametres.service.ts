@@ -6,15 +6,15 @@ import { HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class ParametresService {
-  url =  "https://guarded-plateau-89843.herokuapp.com/parametres";
+  url =  'https://guarded-plateau-89843.herokuapp.com/parametres';
 
-  constructor( private http : HttpClient ) { }
+  constructor( private http: HttpClient ) { }
 
-  getAllParametres(){
+  getAllParametres() {
     return this.http.get(this.url);
   }
 
-  getParametreById(id){
-    return this.http.get(this.url + "/" + id);
+  getParametreById(id) {
+    return this.http.get(this.url + '/' + id);
   }
 }

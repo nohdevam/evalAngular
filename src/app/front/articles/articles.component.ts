@@ -15,22 +15,22 @@ export class ArticlesComponent implements OnInit {
 article;
 commentaires;
 
-  constructor(private router : ActivatedRoute,
-              private service : ArticlesService,
-              private serviceC : CommentairesService) {}
+  constructor(private router: ActivatedRoute,
+              private service: ArticlesService,
+              private serviceC: CommentairesService) {}
 
   ngOnInit(): void {
     this.router.paramMap.subscribe((params) => {
-      const id = params.get("id");
+      const id = params.get('id');
       this.service.getArticleById(id)
-      .subscribe((response : Response) => {
+      .subscribe((response: Response) => {
         this.article = response;
-        console.log(this.article)
-      })
+        console.log(this.article);
+      });
       this.serviceC.getAllCommentaires()
       .subscribe((response = Response) => {
       this.commentaires = response;
-    })
-    })
+    });
+    });
 }
 }

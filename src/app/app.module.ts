@@ -60,22 +60,22 @@ import { ModifUserComponent } from './back/user/modif-user/modif-user.component'
     BrowserModule,
     RouterModule.forRoot(
       [
-        { path: "" , component: AccueilComponent },
-        { path: "articles/:id" , component: ArticlesComponent },
-        { path: "admin/articles/liste" , component: ListeComponent },
-        {path:"admin/articles/ajouter" , component: AjouterComponent},
-        {path:"admin/articles/modifier" , component: ModifierComponent},
-        { path: "user/:id" , component: UserComponent },
-        { path: "admin/user/liste-user" , component: ListeUserComponent },
-        { path: "admin/liste-user" , component: ListeUserComponent },
-        { path: "liste-user/:id" , component: ListeUserComponent },
-        {path:"admin/user/ajouter" , component: AjouterUserComponent },
-        {path:"admin/user/modifier" , component: ModifUserComponent },
-        { path: "admin/parametres/liste-param" , component: ListeParamComponent },
-        { path: "admin/parametres/form" , component: FormComponent },
-        { path: "commentaires/:id" , component: CommentairesComponent},
-        { path: "admin" , component: DashboardComponent },
-        { path: "**" , component: NotFoundComponent}
+        { path: '' , component: AccueilComponent },
+        { path: 'articles/:id' , component: ArticlesComponent },
+        { path: 'admin/articles/liste' , component: ListeComponent },
+        {path: 'admin/articles/ajouter' , component: AjouterComponent},
+        {path: 'admin/articles/modifier' , component: ModifierComponent},
+        { path: 'user/:id' , component: UserComponent },
+        { path: 'admin/user/liste-user' , component: ListeUserComponent },
+        { path: 'admin/liste-user' , component: ListeUserComponent },
+        { path: 'liste-user/:id' , component: ListeUserComponent },
+        {path: 'admin/user/ajouter' , component: AjouterUserComponent },
+        {path: 'admin/user/modifier' , component: ModifUserComponent },
+        { path: 'admin/parametres/liste-param' , component: ListeParamComponent },
+        { path: 'admin/parametres/form' , component: FormComponent },
+        { path: 'commentaires/:id' , component: CommentairesComponent},
+        { path: 'admin' , component: DashboardComponent },
+        { path: '**' , component: NotFoundComponent}
       ]
     ),
     HttpClientModule

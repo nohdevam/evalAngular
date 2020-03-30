@@ -10,18 +10,18 @@ import { ArticlesService } from '../../service/articles.service';
 })
 export class AccueilComponent implements OnInit {
   articles;
-  constructor(private service : ArticlesService) {
+  constructor(private service: ArticlesService) {
 
   }
 
   ngOnInit(): void {
     this.service.getAllArticles()
-    .subscribe((response : Response) => {
+    .subscribe((response: Response) => {
       this.articles = response;
-      console.log(this.articles)
+      console.log(this.articles);
 
 
-    })
+    });
   }
 
 }
